@@ -1,0 +1,44 @@
+// Place all the styles related to the Flats controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+
+.container {
+  width: 70rem;
+  margin: 0 auto;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  .card{
+    box-shadow: 4px 4px 8px gray;
+    margin: 1rem 1rem;
+    img{
+      width: 20rem;
+    }
+  }
+  .action {
+    padding: 0.8rem 1rem;
+    .card-info {
+      text-decoration: none;
+      color: #0056b3;
+    }
+    .card-info:hover {
+      text-decoration: underline;
+      color: #024791;
+      }
+  }
+}
+
+i{
+  margin:0 0.5rem;
+}
+
+#new_flat {
+  text-align: center;
+  background-color: rgb(126, 168, 247);
+  div {
+    padding: 1rem 0;
+  }
+}

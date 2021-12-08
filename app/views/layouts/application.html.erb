@@ -8,9 +8,20 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   </head>
 
   <body>
+  <nav>
+  <div class = "nav-display">
+  <div class="brand">
+  <%= link_to "Simple Airbnb", flats_path  %>
+  </div>
+  <div class="nav-actions">
+  <%= link_to "Add Flat", new_flat_path, class: 'btn-add' %>
+  </div>
+  </div>
+  </nav>
     <%= yield %>
   </body>
 </html>
